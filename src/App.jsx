@@ -1,10 +1,30 @@
 import React from 'react'
 
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import Home from './pages/Home';
+import Signin from './pages/Signin';
+import SignOut from './pages/SignOut';
+import About from './pages/About';
+import Profile from './pages/Profile';
+
 function App() {
   return (
-    <div>
+    <BrowserRouter>
+    {/* <div>
       <h1 className='text-red-500'>Real_State_Marketplace</h1>
-    </div>
+    </div> */}
+
+    <Routes>
+      <Route path='/'element={<Home/>}/>
+      <Route path='/Home' element={<Home/>}/>
+      <Route path='/Signin' element={<Signin/>}/>
+      <Route path='/SignOut' element={<SignOut/>}/>
+      <Route path='/About' element={<About/>}/>
+      <Route path='/Profile' element={<Profile/>}/>
+     
+       
+    </Routes>
+    </BrowserRouter>
   )
 }
 
