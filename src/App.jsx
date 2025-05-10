@@ -6,6 +6,7 @@ import Signin from './pages/Signin';
 import SignOut from './pages/SignOut';
 import About from './pages/About';
 import Profile from './pages/Profile';
+import Header from './components/Header';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
     {/* <div>
       <h1 className='text-red-500'>Real_State_Marketplace</h1>
     </div> */}
+
+    <Header/>
 
     <Routes>
       <Route path='/'element={<Home/>}/>
