@@ -30,7 +30,7 @@ export default function Header() {
         <Link to='/about' className='flex items-center gap-2'>
         <li className='hidden sm:inline text-slate-700 hover:underline'>About</li>
         </Link>
-        <Link to='/sign-in' className='flex items-center gap-2'>
+        <Link to='/Signin' className='flex items-center gap-2'>
         <li className='hidden sm:inline text-slate-700 hover:underline'>Sign in</li>
         </Link>
       </ul>
